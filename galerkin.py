@@ -90,12 +90,11 @@ def solve_ode(
 
     def body(c_t, _):
         c_tm1 = euler_step(c_t, dt)
-        return c_tm1, c_t
+        return c_tm1, c_tm1
 
     _, c_trajectory = jax.lax.scan(
         body, c_tf, xs=None, length=time_grid_size, reverse=True
     )
-
     return c_trajectory
 
 

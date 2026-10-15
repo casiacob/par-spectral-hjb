@@ -34,5 +34,4 @@ def solve_par_ode(
     c = jnp.zeros((time_grid_size, G.shape[0]))
     elems = par_init(F, c, c_tf)
     elems = par_reverse_scan(elems)
-    coefficients = jnp.vstack((elems[1], c_tf))
-    return coefficients[1:]
+    return elems[1]
