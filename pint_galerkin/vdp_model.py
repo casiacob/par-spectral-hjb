@@ -1,4 +1,4 @@
-from pint_galerkin.objects import StochasticOCP
+from .objects import StochasticOCP
 import jax.numpy as jnp
 
 lambda_param = 0.3

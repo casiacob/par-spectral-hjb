@@ -14,7 +14,7 @@ import numpy as np
 import jax
 import jax.numpy as jnp
 
-from models.vdp_model import ocp_vdp
+from pint_galerkin.vdp_model import ocp_vdp
 
 from pint_galerkin.ode_solvers import (
     par_exp_integrate_time_invariant,

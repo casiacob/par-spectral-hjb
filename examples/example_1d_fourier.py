@@ -1,5 +1,6 @@
 import jax.numpy as jnp
-from models.nonlinear_model_1d import ocp_nonlin_1d
+
+from pint_galerkin.nonlinear_model_1d import ocp_nonlin_1d
 from jax import config
 from pint_galerkin.fourier_1d import (
     setup_grids,
@@ -11,10 +12,9 @@ from pint_galerkin.fourier_1d import (
 import jax
 import matplotlib.pyplot as plt
 
-from pint_galerkin.ode_solvers import (
-    seq_exp_integrate_time_invariant,
-)
+from pint_galerkin.ode_solvers import seq_exp_integrate_time_invariant
 
+config.update("jax_platform_name", "cpu")
 config.update("jax_enable_x64", True)
 
 

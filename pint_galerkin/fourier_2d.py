@@ -1,7 +1,6 @@
 import jax.numpy as jnp
-import jax.scipy as jsp
 import jax
-from objects import StochasticOCP
+from .objects import StochasticOCP
 
 
 def setup_grids_2d(L, N_x, N_w):

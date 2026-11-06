@@ -1,4 +1,4 @@
-from pint_galerkin.objects import StochasticOCP
+from .objects import StochasticOCP
 
 lambda_param = 0.1
 inv_R = 1.0

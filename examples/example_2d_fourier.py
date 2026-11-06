@@ -14,8 +14,9 @@ from pint_galerkin.ode_solvers import (
 )
 import matplotlib.pyplot as plt
 from jax import config
-from models.vdp_model import ocp_vdp
+from pint_galerkin.vdp_model import ocp_vdp
 
+config.update("jax_platform_name", "cpu")
 config.update("jax_enable_x64", True)
 
 

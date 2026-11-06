@@ -7,7 +7,7 @@ import time
 import numpy as np
 import jax
 
-from models.nonlinear_model_1d import ocp_nonlin_1d
+from pint_galerkin.nonlinear_model_1d import ocp_nonlin_1d
 from pint_galerkin.fourier_1d import (
     setup_grids,
     project_final_cost,
